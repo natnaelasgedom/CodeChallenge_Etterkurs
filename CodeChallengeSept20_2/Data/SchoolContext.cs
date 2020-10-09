@@ -9,14 +9,6 @@ namespace CodeChallengeSept20_2.Data
         {
         }
 
-        public SchoolContext()
-        {
-        }
-
-        public SchoolContext(string connectionString) : 
-            base(new DbContextOptionsBuilder().UseSqlServer(connectionString).Options)
-        {
-        }
 
         public DbSet<Course> Courses { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
